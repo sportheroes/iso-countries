@@ -2,9 +2,13 @@
   "name": "iso-countries",
   "version": "1.0.0",
   "description": "A simple package to get a list of names and iso2 codes for countries",
-  "main": "country-codes.js",
+  "main": "dist/build.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack -w",
+    "build": "webpack -p",
+    "test": "ava tests/**/*.js",
+    "test-w": "ava -w tests/**/*.js",
+    "prepublish": "npm build && npm test"
   },
   "repository": {
     "type": "git",
@@ -15,5 +19,14 @@
   "bugs": {
     "url": "https://github.com/sportheroes/iso-countries/issues"
   },
-  "homepage": "https://github.com/sportheroes/iso-countries#readme"
+  "homepage": "https://github.com/sportheroes/iso-countries#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "webpack": "^2.6.1"
+  }
 }
