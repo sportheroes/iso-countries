@@ -1,0 +1,19 @@
+{
+  "name": "iso-countries",
+  "version": "1.0.0",
+  "description": "A simple package to get a list of names and iso2 codes for countries",
+  "main": "country-codes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sportheroes/iso-countries.git"
+  },
+  "author": "hakim assouane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sportheroes/iso-countries/issues"
+  },
+  "homepage": "https://github.com/sportheroes/iso-countries#readme"
+}
